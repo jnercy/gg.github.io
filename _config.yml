@@ -5,7 +5,6 @@
 # Site
 title: Hexo
 subtitle: ''
-description: ''
 keywords:
 author: John Doe
 language: en
@@ -13,7 +12,8 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://jnercy.github.io/gg.github.io
+root: /gg.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -96,11 +96,47 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hexo-theme-livemylife
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/jnercy/jnercy.github.io.git
+  repo: git@github.com:jnercy/gg.github.io.git
   branch: master
+
+# Site settings
+SEOTitle: JavaDev | 一如Java深似海
+email: hexo-theme-livemylife@mail.com
+description: "It's an IT blog..."
+keyword: "Java,v-vincen,v-vincen,livemylife,IT  blog,Blog"
+header-img: img/header_img/newhome_bg.jpg
+archives-img: img/header_img/archive_bg2.jpg
+
+favicon: img/avatar/favicon.jpg
+
+themecolor:
+  enable: true
+  mode: dark
+
+# Tip Settings
+tip:
+  enable: true
+
+# Sidebar Settings
+sidebar: true
+widgets:
+  - visitor
+  - featured-tags
+  - short-about
+  - recent-posts
+  - friends-blog
+  - archive
+  - category
+
+# Hexo Admin Settings
+admin:
+  username: admin
+  password_hash: $2a$10$nd4/NVrOQgPBxpLk1HBRNeXCs3bMDkWrb/ovnEpRT1yZAM4kjcoGa
+  secret: jnercy-hexo-admin-secret-key-2024
+  deployCommand: 'hexo clean && hexo g && hexo d'
